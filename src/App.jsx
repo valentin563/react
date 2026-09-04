@@ -1,18 +1,24 @@
+import Profile from "./components/Porfile";
 
-function App() {
-
-
+function User(age, name) {
   return (
     <div>
-      <h1 className='titre'>Hedy Lamarr's Todos</h1>
-      <img className='image' src="https://i.imgur.com/yXOvdOSs.jpg" alt="portrait" />
-      <ul className='liste'>
-        <li>Invent new traffic lights</li>
-        <li>Rehearse a movie scene</li>
-        <li>Improve the spectrum technology</li>
-      </ul>
+      <h2>{name}</h2>
+      <p>Age : {age}</p>
     </div>
-  );
-};
+  )
+
+}
+
+
+function App() {
+  return (
+    <>
+      <User name="Heddy Lamarr" age{101} />
+    </>
+
+  )
+
+}
 
 export default App
